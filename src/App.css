@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  img {
+    @apply inline-block;
+  }
+}
+:root {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+/* Responsive CSS */
+@media (min-width: 320px) {
+  .container {
+    @apply max-w-full;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    @apply max-w-[1344px];
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    @apply px-4;
+  }
+}
